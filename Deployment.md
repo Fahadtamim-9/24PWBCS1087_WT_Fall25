@@ -1,5 +1,5 @@
 Deployment record
-Repository: faizan-ahmad5/24PWBCS1114-WT-Fall25 Date: 2025-10-11
+Repository: https://github.com/Fahadtamim-9/24PWBCS1087_WT_Fall25.git Date: 13/10/25
 
 Site URL (GitHub Pages): https://github.com/Fahadtamim-9/24PWBCS1087_WT_Fall25.git
 
