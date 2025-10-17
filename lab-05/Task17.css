@@ -1,0 +1,13 @@
+/* Spacing */
+.m-1 { margin: 10px; }
+.m-2 { margin: 20px; }
+
+/* Text alignment */
+.text-center { text-align: center; }
+
+/* Show / Hide */
+.hide-mobile { display: none; }
+
+@media (min-width: 768px) {
+  .hide-mobile { display: block; }
+}

@@ -1,0 +1,39 @@
+body {
+  font-family: Arial;
+  background: white;
+  color: black;
+  padding: 20px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #222;
+    color: white;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* High contrast */
+@media (prefers-contrast: more) {
+  body {
+    background: black;
+    color: yellow;
+  }
+}
+
+/* Print */
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+}

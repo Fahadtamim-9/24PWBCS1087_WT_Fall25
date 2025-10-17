@@ -1,0 +1,83 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fixed Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: steelblue;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  z-index: 1000; /* On top */
+}
+
+/* Container for sidebar + main content */
+.container {
+  display: flex;
+  margin-top: 80px; /* space for header */
+  padding: 10px;
+}
+
+/* Sticky Sidebar */
+.sidebar {
+  width: 25%;
+  background: lightgray;
+  padding: 10px;
+  position: sticky;
+  top: 80px; /* sticks below header */
+  height: fit-content;
+}
+
+/* Main Content */
+.main-content {
+  width: 75%;
+  padding: 15px;
+  background: #f5f5f5;
+}
+
+/* Absolute Modal */
+.modal {
+  position: relative; /* parent for absolute child */
+}
+.modal-box {
+  position: absolute;
+  top: 150px;
+  right: 30px;
+  background: white;
+  border: 2px solid black;
+  padding: 15px;
+  width: 200px;
+  z-index: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  /* Header becomes static */
+  .header {
+    position: static;
+  }
+
+  /* Sidebar stacks below main content */
+  .container {
+    flex-direction: column;
+  }
+  .sidebar, .main-content {
+    width: 100%;
+  }
+
+  /* Modal becomes full screen */
+  .modal-box {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+} 
