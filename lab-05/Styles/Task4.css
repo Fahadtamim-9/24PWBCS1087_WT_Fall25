@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: steelblue;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.main-nav a:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: black;
+  flex-direction: column;
+  min-width: 150px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 8px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Hamburger icon (mobile look only) */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Page Layout */
+.page-layout {
+  display: flex;
+  min-height: 80vh;
+}
+
+/* Sidebar */
+.sidebar-nav {
+  width: 200px;
+  background: #f1f1f1;
+  padding: 15px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  /* Stack header items */
+  .main-header {
+    flex-wrap: wrap;
+  }
+
+  /* Hide main nav, show hamburger */
+  .main-nav {
+    width: 100%;
+    order: 3;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    background: steelblue;
+    display: none; /* Just hidden for now */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Sidebar below content */
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+  }
+
+  /* Dropdown stacks */
+  .dropdown-menu {
+    position: static;
+    border: none;
+    background: steelblue;
+  }
+
+  .dropdown-menu li a {
+    color: white;
+  }
+}
