@@ -1,0 +1,22 @@
+.button {
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0066cc;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em auto;
+  width: 250px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

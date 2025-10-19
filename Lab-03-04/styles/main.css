@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Lora:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #800022, #c2185b);
+  color: #fff;
+  text-align: center;
+  padding: 0.6em 0;
+  font-size: 1.2rem; 
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+nav {
+  background: #f4f4f4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+  position: relative;
+}
+
+nav a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #004080;
+  transition: width 0.3s;
+  margin: 0 auto;
+}
+
+nav a:hover {
+  color: #c2185b;
+  transform: scale(1.05);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  padding: 1.5em;
+  text-align: center;
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+footer {
+  background: linear-gradient(135deg, #b7bcc2, #0477ea);
+  color: #f9f9f9;
+  text-align: center;
+  padding: 0.8em 0;
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+} 

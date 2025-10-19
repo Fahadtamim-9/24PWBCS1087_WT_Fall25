@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Task 1 – CSS Selectors Practice</title>
+
+  <link rel="stylesheet" href="../styles/main.css" />
+
+  <style>
+    
+    h1 { color: #004080; }                       
+    .highlight { color: green; font-weight: bold; } 
+    #special { background: #d0e0ff; }             
+    * { box-sizing: border-box; }                
+    div { padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; }
+
+    
+    a[target] { color: red; }
+    input[type="text"] { border: 2px solid #004080; }
+    img[alt*="photo"] { border-radius: 10px; }
+
+    
+    div p { color: darkblue; }                   
+    div > span { color: purple; }             
+    h2 + p { color: darkgreen; }                
+    h3 ~ p { font-style: italic; }                
+
+    a:hover { text-decoration: underline; }
+    a:visited { color: gray; }
+    input:focus { background: #ffffcc; }
+    li:first-child { font-weight: bold; }
+    li:last-child { color: blue; }
+
+    
+    p::first-letter { font-size: 20px; color: red; }
+    p::after { content: " 🌟"; }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Task 1: CSS Selectors Practice</h1>
+  </header>
+
+  <main>
+    <div id="special">
+      <h2>Basic Selectors</h2>
+      <p class="highlight">This paragraph uses a class selector.</p>
+      <p>This one is styled by an element selector.</p>
+    </div>
+
+    <div>
+      <h2>Attribute Selectors</h2>
+      <a href="https://uetpeshawar.edu.pk" target="_blank">UET Website</a><br />
+      <input type="text" placeholder="Enter name" />
+      <img src="https://via.placeholder.com/100" alt="student photo" />
+    </div>
+
+    <div>
+      <h2>Combinators</h2>
+      <p>This is inside a div (descendant).</p>
+      <span>I'm a child span inside div.</span>
+    </div>
+    <h3>Sibling Example</h3>
+    <p>This follows an h3, so it uses general sibling style.</p>
+
+    <ul>
+      <li>First item (first-child)</li>
+      <li>Middle item</li>
+      <li>Last item (last-child)</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">← Back to Home</a></p>
+  </footer>
+</body>
+</html>

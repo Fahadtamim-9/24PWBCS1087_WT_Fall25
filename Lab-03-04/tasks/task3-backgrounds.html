@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3 – Background Gallery</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <style>
+    .solid { background-color: lightblue; padding: 20px; }
+    .image { background: url("https://via.placeholder.com/300") repeat; padding: 20px; }
+    .gradient { background: linear-gradient(to right, pink, purple); padding: 20px; }
+    .multi {
+      background: url("https://via.placeholder.com/100") no-repeat right top,
+                  linear-gradient(to bottom, #fff, #ccc);
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Task 3: Background Gallery</h1></header>
+  <main>
+    <div class="solid">Solid Color Background</div>
+    <div class="image">Image Background</div>
+    <div class="gradient">Linear Gradient</div>
+    <div class="multi">Multiple Background Layers</div>
+  </main>
+  <footer><p><a href="../index.html">← Back to Home</a></p></footer>
+</body>
+</html>

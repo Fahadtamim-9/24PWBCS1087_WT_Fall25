@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 9 – Text Spacing</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <style>
+    p { line-height: 1.6; }
+    .letter { letter-spacing: 3px; }
+    .word { word-spacing: 10px; }
+    .indent { text-indent: 40px; }
+    .overflow {
+      width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Exercise 9: Text Spacing</h1></header>
+  <main>
+    <p class="letter">This text has extra letter spacing.</p>
+    <p class="word">This text has extra word spacing.</p>
+    <p class="indent">This paragraph is indented.</p>
+    <p class="overflow">This text is too long to fit in its box, so it overflows.</p>
+  </main>
+  <footer><a href="../index.html">← Back to Home</a></footer>
+</body>
+</html>
